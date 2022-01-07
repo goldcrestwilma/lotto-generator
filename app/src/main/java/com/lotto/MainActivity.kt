@@ -19,6 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         val sayHello = "hello kotlin"
 
+        var mutable = 1
+
+        mutable = 1_000
+
         setContentView(binding.root)
         binding.btnSay.setOnClickListener {
             binding.textSay.text = sayHello
