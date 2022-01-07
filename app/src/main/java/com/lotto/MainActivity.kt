@@ -17,10 +17,11 @@ class MainActivity : AppCompatActivity() {
         Log.w("BasicSyntax-warning", "로그 method = Log.w") // warning
         Log.e("BasicSyntax-error", "로그 method = Log.e") // error
 
+        val sayHello = "hello kotlin"
 
         setContentView(binding.root)
         binding.btnSay.setOnClickListener {
-            binding.textSay.text = "hello kotlin"
+            binding.textSay.text = sayHello
         }
     }
 }
