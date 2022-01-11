@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         mutable = 1_000
 
+        var dayArray = arrayOf("MON", "TUE")
+        var mutableList = mutableListOf("MON", "TUE", "WED")
+        mutableList.add("THU")
+
         setContentView(binding.root)
         binding.btnSay.setOnClickListener {
             binding.textSay.text = sayHello
